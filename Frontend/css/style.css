@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100; 1,100; 1.300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: darkblue;
+}
+main{
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.add-form{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 15px;
+    width: 100%;
+}
+input{
+    width: 100%;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+button[type='submit'] {
+ background-color: cornflowerblue;
+ width: 50px;
+ height: 50px;
+ border: none;
+ border-radius: 5px;
+ color: black;
+ font-size: 1.7rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: 500;
+ cursor: pointer;
+}
+table{
+border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+td, th {
+    padding: 10px 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+td{
+    color: black;
+    font-weight: 600;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+select{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #ebebeb;    
+}
+
+select:hover{
+    background-color: #ddd;
+}
+
+.btn-action {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-action:nth-child(1){
+    background-color: gold;
+    margin: 5px;
+
+}
+
+.btn-action:nth-child(2){
+    background-color: rgba(237, 42, 42, 0.9);
+    margin: 5px;
+
+}
+th {
+  background-color: green;
+}
+tr:hover{
+   background-color: darkgray;
+}
