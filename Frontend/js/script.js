@@ -2,8 +2,6 @@ const tbody = document.querySelector('tbody');
 const addForm = document.querySelector('.add-form');
 const inputTask = document.querySelector('.input-task');
 
-const baseUrl = "https://todolist-backend-jeanmb.vercel.app";
-
 const fetchTask = async() => {
 const response = await fetch('http://localhost:3333/task');
 const task = await response.json();
