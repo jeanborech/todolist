@@ -1,0 +1,15 @@
+{
+"version": 2,
+"builds": [
+    {
+        "src": "./Backend/src",
+        "use": "@vercel/node"
+    }
+],
+    "routers": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
