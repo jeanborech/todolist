@@ -138,6 +138,24 @@ const loadTask = async () => {
 
 };
 
+const handleSubmit = async (event) => {
+event.preventDefault();
+
+const primeiro = document.querySelector('input[id=primeiro-dado]').value;
+const segundo = document.querySelector('input[id=segundo-dado]').value;
+const terceiro = document.querySelector('input[id=terceiro-dado]').value;
+
+fetch('https://api.sheetmonkey.io/form/oJysGTxU26aN6bNNYA47u6', { 
+    method: 'POST',
+     headers: {'Accept': 'application/json0',
+     'Content-Type': 'application/json',
+    },
+    body: JSON.stringify( {primeiro, segundo, terceiro})   
+}).then(() => alert('Dados Enviados'));
+};
+
+document.querySelector('.add-form2').addEventListener('submit', handleSubmit);
+
 addForm.addEventListener('submit',addTask);
 
 loadTask();
