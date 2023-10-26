@@ -111,17 +111,16 @@ tr:hover{
 }
 
 .container{
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 4%;
     width: 700px;
-   
 }
 
 .add-form2{
     background-color: white;
     max-width: 500px;
-    height: 450px;
+    height: 480px;
     padding: 40px;
     border-radius: 20px;
 }
@@ -147,6 +146,7 @@ tr:hover{
     bottom: 5px;
     transition: all 0.2s;
     cursor: text;
+    color: #2D5966;
 }
     .input{
         width: 100%;
@@ -167,6 +167,7 @@ tr:hover{
     .button-env{
         width: 100%;
         text-align: center;
+        padding-bottom: 30px;
     }
 
     .button-env input[type=submit]{
@@ -177,5 +178,4 @@ tr:hover{
         color: white;
         cursor: pointer;
         width: 125px;
-        
     }

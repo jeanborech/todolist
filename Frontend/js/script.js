@@ -144,13 +144,15 @@ event.preventDefault();
 const primeiro = document.querySelector('input[id=primeiro-dado]').value;
 const segundo = document.querySelector('input[id=segundo-dado]').value;
 const terceiro = document.querySelector('input[id=terceiro-dado]').value;
+const quarto = document.querySelector('input[id=quarto-dado]').value;
 
 fetch('https://api.sheetmonkey.io/form/oJysGTxU26aN6bNNYA47u6', { 
     method: 'POST',
      headers: {'Accept': 'application/json0',
      'Content-Type': 'application/json',
     },
-    body: JSON.stringify( {primeiro, segundo, terceiro})   
+    body: JSON.stringify( {
+        MÁQUINA: primeiro, NS: segundo, ENSAIO_REALIZADO: terceiro, DATA: quarto})   
 }).then(() => alert('Dados Enviados'));
 };
 
